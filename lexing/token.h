@@ -13,7 +13,8 @@ typedef enum {
     FLOAT,
     INT,
     STRING,
-    CHAR
+    CHAR,
+    EOF_TOK
 } TokenType;
 
 typedef struct {
