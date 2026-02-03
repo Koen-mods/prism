@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "./lexing/token.h"
+#include "./lexing/lexer.h"
 
 #define VERSION "Prism, version 0.0.1\n"
 
@@ -13,6 +14,11 @@ int main(int argc, char *argv[]) {
             }
         }
     }
+
+    Token *tokens;
+    tokens = lex("test");
+
+    printf("%s\n", tokens[0].lexeme);
 
     return 0;
 }
