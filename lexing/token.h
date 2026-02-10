@@ -9,14 +9,14 @@ typedef enum {
     KEYWORD,
     IDENTIFIER,
     OPERATOR,
-    SEMICOLON,
+    SEMICOLON, // ;
     FLOAT,
     INT,
     STRING,
     CHAR,
     EOF_TOK,
-    NEWLINE,
-    COMMA
+    NEWLINE, // \n
+    COMMA // ,
 } TokenType;
 
 typedef struct {
