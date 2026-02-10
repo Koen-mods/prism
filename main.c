@@ -17,9 +17,15 @@ int main(int argc, char *argv[]) {
     }
 
     Token *tokens;
-    tokens = lex("test");
+    tokens = lex("test(((((((((((((((((((((((())))))))))))))))))))))))", 52);
 
-    printf("%s, saved at %p\n", tokens[0].lexeme, tokens);
+    for (int i = 0; i < 25; i++) {
+        printf("%s\n", tokens[i].lexeme);
+    }
+
+    if (isOperator('!')) {
+        printf("'!' is an operator\n");
+    }
 
     return 0;
 }

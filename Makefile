@@ -1,4 +1,4 @@
-CC = gcc
+CC = clang
 C_SRC = main.c ./lexing/*.c
 C_OUTPUT = test
 
