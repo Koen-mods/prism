@@ -7,7 +7,7 @@
         mov ebx,1
         mov ecx,msg
         mov edx,len
-        int 0x80 ; 32-bit linux syscall
+        int 0x80 ; 32-bit linux syscall ABI
         add byte [i], 1
         jmp .loop
 

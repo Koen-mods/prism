@@ -17,14 +17,10 @@ int main(int argc, char *argv[]) {
     }
 
     Token *tokens;
-    tokens = lex("({1.4})", 7);
+    tokens = lex("({\n}) +", 7);
 
     for (int i = 0; i < 7; i++) {
         printf("%s\n", tokens[i].lexeme);
-    }
-
-    if (isOperator('!')) {
-        printf("'!' is an operator\n");
     }
 
     return 0;

@@ -78,6 +78,18 @@ Token *lex(char *input, int length) {
             Token tok = { number, FLOAT, index, line, literalMem };
             output[index] = tok;
             index++;
+        } else if (input[i] == '\n') {
+            Token tok = { "\\n", NEWLINE, index, line, NULL };
+            line++;
+            output[index] = tok;
+            index++;
+        } else if (isOperator(input[i])) {
+            char *op;
+            op[0] = input[i];
+            op[1] = '\0';
+            Token tok = { op, OPERATOR, index, line, NULL };
+            output[index] = tok;
+            index++;
         }
     }
 

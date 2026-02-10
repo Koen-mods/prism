@@ -14,7 +14,8 @@ typedef enum {
     INT,
     STRING,
     CHAR,
-    EOF_TOK
+    EOF_TOK,
+    NEWLINE
 } TokenType;
 
 typedef struct {

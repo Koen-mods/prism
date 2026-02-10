@@ -1,2 +1,2 @@
 section .bss
-var resb 1
+    var resb 1
