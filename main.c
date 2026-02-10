@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdbool.h>
 #include "./lexing/token.h"
 #include "./lexing/lexer.h"
 
@@ -18,7 +19,7 @@ int main(int argc, char *argv[]) {
     Token *tokens;
     tokens = lex("test");
 
-    printf("%s\n", tokens[0].lexeme);
+    printf("%s, saved at %p\n", tokens[0].lexeme, tokens);
 
     return 0;
 }

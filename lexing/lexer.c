@@ -3,12 +3,13 @@
 #include <stddef.h>
 #include <ctype.h>
 #include <string.h>
+#include <stdbool.h>
 #define MAX_TOKENS 10000
 
 Token output[MAX_TOKENS];
 
 const char OPERATORS[] = { '+', '-', '|', '$', '!', '%', '/', '*', '=', '<', '>', '^' };
-
+/*
 bool isOperator(char op) {
     for (int i = 0; i < 12; i++) {
         if (OPERATORS[i] == op) {
@@ -19,6 +20,7 @@ bool isOperator(char op) {
     }
     return 0;
 }
+    */
 
 Token *lex(char *input) {
     int index = 0;
