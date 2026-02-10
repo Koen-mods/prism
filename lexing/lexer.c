@@ -90,6 +90,10 @@ Token *lex(char *input, int length) {
             Token tok = { op, OPERATOR, index, line, NULL };
             output[index] = tok;
             index++;
+        } else if (input[i] == ';') {
+            Token tok = { ";", SEMICOLON, index, line, NULL };
+            output[index] = tok;
+            index++;
         }
     }
 

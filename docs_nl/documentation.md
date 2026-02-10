@@ -14,3 +14,6 @@ De naam van een variabele wordt simpelweg aangegeven met het woord voor het is-t
 variable = ...
 ```
 
+<h4>Waarde</h3>
+De waarde van de variabele is de waarde _achter_ het is-teken
+
