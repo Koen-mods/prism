@@ -5,6 +5,8 @@
 
 bool isOperator(char op);
 
+char *subString(char *input, int start, int end);
+
 Token* lex(char *input, int length);
 
 #endif
