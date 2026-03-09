@@ -23,16 +23,15 @@ bool isOperator(char op) {
 }
 
 char *subString(char *input, int start, int end) {
-    char *output;
-    void *space = malloc((end - start) + 1);
-    int pos = 0;
-    for (int i = start; i < end; i++) {
-        *(output + pos) = *(input + i);
-        pos++;
+    int len = end - start;
+    char *output = malloc(len + 1);
+
+    for (int i = 0; i < len; i++) {
+        output[i] = input[start + i];
     }
-    output[(end - start) + 1] = '\0';
-    strcpy((char *)space, output);
-    return space;
+
+    output[len] = '\0';
+    return output;
 }
 
 Token *lex(char *input, int length) {

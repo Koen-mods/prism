@@ -17,9 +17,9 @@ int main(int argc, char *argv[]) {
     }
 
     Token *tokens;
-    tokens = lex("({\n,});", 8);
+    tokens = lex("({\n,});1.4", 11);
 
-    for (int i = 0; i < 7; i++) {
+    for (int i = 0; i < 9; i++) {
         printf("%s\n", tokens[i].lexeme);
     }
 
